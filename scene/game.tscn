@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dhx3a5tika64x"]
+
+[ext_resource type="Script" uid="uid://dp3oo1l7nludo" path="res://scripts/player.gd" id="1_5kiuu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n4st5"]
+radius = 35.0
+height = 156.0
+
+[node name="Game" type="Node2D" unique_id=1185262068]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=354005251]
+script = ExtResource("1_5kiuu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=96917796]
+position = Vector2(260, 325)
+shape = SubResource("CapsuleShape2D_n4st5")
