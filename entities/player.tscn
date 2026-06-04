@@ -7,7 +7,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u3f3p"]
 radius = 7.0
-height = 18.0
+height = 16.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e4p34"]
 atlas = ExtResource("2_b0kkn")
@@ -119,12 +119,13 @@ visible = false
 shape = SubResource("CapsuleShape2D_u3f3p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=151514034]
+z_index = 1
+texture_filter = 1
 position = Vector2(0, -1)
 scale = Vector2(1, 1.125)
 sprite_frames = SubResource("SpriteFrames_i623q")
 animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.79429764
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=613270726]
 limit_left = 0
